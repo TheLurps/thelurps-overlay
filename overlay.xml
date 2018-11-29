@@ -1,0 +1,10 @@
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>thelurps-overlay</name>
+    <description>My overlay</description>
+	<homepage>https://github.com/TheLurps/thelurps-overlay/</homepage>
+    <source type="git">git://github.com/TheLurps/thelurps-overlay.git</source>
+    <feed>https://github.com/TheLurps/thelurps-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
+
