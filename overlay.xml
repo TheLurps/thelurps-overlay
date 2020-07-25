@@ -1,6 +1,6 @@
 <repositories encoding="unicode" version="1.1">
   <repo priority="50" quality="experimental">
-    <name>thelurps-overlay</name>
+    <name>thelurps</name>
     <description>My private overlay</description>
     <homepage>https://github.com/TheLurps/thelurps-overlay</homepage>
     <owner>
