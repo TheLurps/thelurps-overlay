@@ -1,10 +1,12 @@
-<repositories version="1.0">
-  <repo quality="experimental" status="unofficial">
+<repositories encoding="unicode" version="1.1">
+  <repo priority="50" quality="experimental">
     <name>thelurps-overlay</name>
-    <description>My overlay</description>
-	<homepage>https://github.com/TheLurps/thelurps-overlay/</homepage>
-    <source type="git">git://github.com/TheLurps/thelurps-overlay.git</source>
-    <feed>https://github.com/TheLurps/thelurps-overlay/commits/master.atom</feed>
+    <description>My private overlay</description>
+    <homepage>https://github.com/TheLurps/thelurps-overlay</homepage>
+    <owner>
+      <email>joshua@schraven.email</email>
+      <name>Joshua Schraven</name>
+    </owner>
+    <source branch="master" type="git">git://github.com/TheLurps/thelurps-overlay.git</source>
   </repo>
 </repositories>
-
