@@ -3,7 +3,7 @@
 
 EAPI=7
 
-DESCRIPTION="NoiseTorch is an easy to use open source application for Linux with PulseAudio. It creates a virtual microphone that suppresses noise, in any application. Use whichever conferencing or VOIP application you like and simply select the NoiseTorch Virtual Microphone as input to torch the sound of your mechanical keyboard, computer fans, trains and the likes."
+DESCRIPTION="Creates virtual microphone suppressing noise using PulseAudio."
 HOMEPAGE="https://github.com/lawl/NoiseTorch"
 
 inherit git-r3
