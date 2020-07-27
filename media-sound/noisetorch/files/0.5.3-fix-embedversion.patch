@@ -1,0 +1,13 @@
+diff --git a/scripts/embedversion.go b/scripts/embedversion.go
+index ce0a756..487645f 100644
+--- a/scripts/embedversion.go
++++ b/scripts/embedversion.go
+@@ -7,7 +7,7 @@ import (
+ )
+ 
+ func main() {
+-	cmd := exec.Command("git", "describe", "--tags")
++	cmd := exec.Command("echo", "0.5.3-beta-2-gc07c021")
+ 	ret, err := cmd.Output()
+ 
+ 	if err != nil {

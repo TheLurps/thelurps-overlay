@@ -1,0 +1,19 @@
+diff --git a/Makefile b/Makefile
+index 75f6ced..93c53b2 100644
+--- a/Makefile
++++ b/Makefile
+@@ -21,9 +21,11 @@ release: rnnoise
+ 	tar cvzf ../bin/NoiseTorch_x64.tgz .
+ 	rm -rf tmp/
+ 	go run scripts/signer.go -s
+-	git describe --tags > bin/version.txt
++	echo "0.5.3-beta-2-gc07c021" > bin/version.txt
+ rnnoise:
+-	cd librnnoise_ladspa/; \
+-	cmake . -DBUILD_VST_PLUGIN=OFF -DBUILD_LV2_PLUGIN=OFF -DBUILD_LADSPA_PLUGIN=ON; \
++	rmdir librnnoise_ladspa && \
++	ln -s ../noise-suppression-for-voice-0.9 librnnoise_ladspa && \
++	cd librnnoise_ladspa/ && \
++	cmake . -DBUILD_VST_PLUGIN=OFF -DBUILD_LV2_PLUGIN=OFF -DBUILD_LADSPA_PLUGIN=ON && \
+ 	make
+ 
